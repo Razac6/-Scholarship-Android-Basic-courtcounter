@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreTeamA = 0;
-    int scoreTeamB = 0;
+    int scoreTeamA = 100;
+    int scoreTeamB = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,50 +20,56 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team A.
      */
     public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
     public void displayForButtonThree(View v) {
-        displayForTeamA(scoreTeamA = scoreTeamA + 3);
-    }
+        if(scoreTeamA > 0){
+        displayForTeamA(scoreTeamA = scoreTeamA - 3);
+    }}
 
     public void displayForButtonTwo(View v) {
-        displayForTeamA(scoreTeamA = scoreTeamA + 2);
-    }
+        if(scoreTeamA > 0){
+        displayForTeamA(scoreTeamA = scoreTeamA - 2);
+    }}
 
     public void displayForButtonOne(View v) {
-        displayForTeamA(scoreTeamA = scoreTeamA + 1);
-    }
+        if(scoreTeamA > 0){
+        displayForTeamA(scoreTeamA = scoreTeamA - 1);
+    }}
 
 
     /**
      * Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
     public void displayForButtonBThree(View v) {
-        displayForTeamB(scoreTeamB = scoreTeamB + 3);
-    }
+        if(scoreTeamB > 0){
+        displayForTeamB(scoreTeamB = scoreTeamB - 3);
+    }}
 
     public void displayForButtonBTwo(View v) {
-        displayForTeamB(scoreTeamB = scoreTeamB + 2);
-    }
+        if(scoreTeamB > 0){
+        displayForTeamB(scoreTeamB = scoreTeamB - 2);
+    }}
 
     public void displayForButtonBOne(View v) {
-        displayForTeamB(scoreTeamB = scoreTeamB + 1);
-    }
+        if(scoreTeamB > 0){
+        displayForTeamB(scoreTeamB = scoreTeamB - 1);
+    }}
 
 
     /**
      * Reset button
      */
     public void resetScoreButton(View v) {
-        displayForTeamA(scoreTeamA = 0);
-        displayForTeamB(scoreTeamB = 0);
+        displayForTeamA(scoreTeamA = 100);
+        displayForTeamB(scoreTeamB = 100);
 
     }
 

@@ -14,6 +14,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:paddingTop="10sp"
         android:orientation="vertical"
         tools:context="com.example.android.courtcounter.MainActivity">
 
@@ -22,7 +23,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:padding="4dp"
-            android:text="Team A" />
+            android:text="Chewbacca" />
 
         <TextView
             android:id="@+id/team_a_score"
@@ -30,28 +31,37 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:padding="4dp"
-            android:text="0" />
+            android:textSize="40sp"
+            android:textColor="@android:color/black"
+            android:text="100" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:src="@drawable/chewbacca" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:textColor="@android:color/white"
             android:onClick="displayForButtonThree"
-            android:text="+3 points" />
+            android:text="+3 hits !" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:textColor="@android:color/white"
             android:onClick="displayForButtonTwo"
-            android:text="+2 points" />
+            android:text="+2 hits !" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:textColor="@android:color/white"
             android:onClick="displayForButtonOne"
-            android:text="free throw" />
+            android:text="+1 hits" />
 
     </LinearLayout>
 
@@ -59,6 +69,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:paddingTop="10sp"
         android:orientation="vertical"
         tools:context="com.example.android.courtcounter.MainActivity">
 
@@ -67,7 +78,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:padding="4dp"
-            android:text="Team B" />
+            android:text="Vader" />
 
         <TextView
             android:id="@+id/team_b_score"
@@ -75,28 +86,37 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:padding="4dp"
-            android:text="0" />
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:text="100" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:src="@drawable/vader" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:textColor="@android:color/white"
             android:onClick="displayForButtonBThree"
-            android:text="+3 points" />
+            android:text="+3 hits !" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:textColor="@android:color/white"
             android:onClick="displayForButtonBTwo"
-            android:text="+2 points" />
+            android:text="+2 hits !" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:textColor="@android:color/white"
             android:onClick="displayForButtonBOne"
-            android:text="free throw" />
+            android:text="+1 hits" />
 
     </LinearLayout>
 
@@ -109,7 +129,8 @@
             android:layout_margin="8dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:text="Reset"
+            android:text="New Fight"
+            android:textColor="@android:color/white"
             android:onClick="resetScoreButton"/>
 
 
