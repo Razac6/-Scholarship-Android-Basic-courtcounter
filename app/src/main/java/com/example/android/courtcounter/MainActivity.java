@@ -9,9 +9,11 @@ public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA = 0;
     int cardTeamA = 0;
+    int foulsTeamA = 0;
 
     int scoreTeamB = 0;
     int cardTeamB = 0;
+    int foulsTeamB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,28 +21,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /**
-     * Displays the given score for Team A.
-     */
-
-
-//    public void displayForButtonThree(View v) {
-//        if (scoreTeamA > 0) {
-//            displayForTeamA(scoreTeamA = scoreTeamA - 3);
-//        }
-//    }
-//
-//    public void displayForButtonTwo(View v) {
-//        if (scoreTeamA > 0) {
-//            displayForTeamA(scoreTeamA = scoreTeamA - 2);
-//        }
-//    }
-
     /*
      * TeamA
      * */
 
-//    score
+    //    score
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
@@ -58,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayForButtonAcard(View view) {
         displayForACard(cardTeamA = cardTeamA + 1);
+    }
+
+    //    fouls
+    public void displayForAFouls(int foul) {
+        TextView scoreView = (TextView) findViewById(R.id.team_a_fouls);
+        scoreView.setText(String.valueOf(foul));
+    }
+
+    public void displayForButtonAfoul(View view) {
+        displayForAFouls(foulsTeamA = foulsTeamA + 1);
     }
 
     /**
@@ -82,17 +77,15 @@ public class MainActivity extends AppCompatActivity {
         displayForBCard(cardTeamB = cardTeamB + 1);
     }
 
-//    public void displayForButtonBThree(View v) {
-//        if (scoreTeamB > 0) {
-//            displayForTeamB(scoreTeamB = scoreTeamB - 3);
-//        }
-//    }
-//
-//    public void displayForButtonBTwo(View v) {
-//        if (scoreTeamB > 0) {
-//            displayForTeamB(scoreTeamB = scoreTeamB - 2);
-//        }
-//    }
+    //    fouls
+    public void displayForBFouls(int foul) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_fouls);
+        scoreView.setText(String.valueOf(foul));
+    }
+
+    public void displayForButtonBfoul(View view) {
+        displayForBFouls(foulsTeamB = foulsTeamB + 1);
+    }
 
     /**
      * Reset button
@@ -100,6 +93,10 @@ public class MainActivity extends AppCompatActivity {
     public void resetScoreButton(View v) {
         displayForTeamA(scoreTeamA = 0);
         displayForTeamB(scoreTeamB = 0);
+        displayForACard(cardTeamA = 0);
+        displayForBCard(cardTeamB = 0);
+        displayForAFouls(foulsTeamA = 0);
+        displayForBFouls(foulsTeamB = 0);
     }
 
 

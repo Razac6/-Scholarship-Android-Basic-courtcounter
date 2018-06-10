@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">UEFA Champions Final</string>
-    <string name="gool">gool</string>
+    <string name="goal">goal</string>
     <string name="liverpool">Liverpool</string>
     <string name="play_off">play-off</string>
     <string name="foul">foul</string>
     <string name="card">Card</string>
     <string name="real_madrit">Real Madrit</string>
     <string name="cards">Cards</string>
+    <string name="start_value">0</string>
+    <string name="simply_img">simply-img</string>
+    <string name="fouls">Fouls</string>
 </resources>
