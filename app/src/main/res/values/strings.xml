@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Star Wars Fight</string>
+    <string name="app_name">UEFA Champions Final</string>
+    <string name="gool">gool</string>
+    <string name="liverpool">Liverpool</string>
+    <string name="play_off">play-off</string>
+    <string name="foul">foul</string>
+    <string name="card">Card</string>
+    <string name="real_madrit">Real Madrit</string>
 </resources>

@@ -5,136 +5,158 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.android.courtcounter.MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         tools:context="com.example.android.courtcounter.MainActivity">
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:paddingTop="10sp"
-        android:orientation="vertical"
-        tools:context="com.example.android.courtcounter.MainActivity">
 
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:padding="4dp"
-            android:text="Chewbacca" />
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10sp"
+            tools:context="com.example.android.courtcounter.MainActivity">
 
-        <TextView
-            android:id="@+id/team_a_score"
-            android:layout_width="match_parent"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/real_madrit" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:src="@drawable/real" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="displayForButtonOne"
+                android:text="@string/gool"
+                android:textColor="@android:color/white" />
+
+<!--            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="displayForButtonThree"
+                android:text="@string/card"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="displayForButtonTwo"
+                android:text="@string/foul"
+                android:textColor="@android:color/white" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:padding="4dp"
-            android:textSize="40sp"
-            android:textColor="@android:color/black"
-            android:text="100" />
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10sp"
+            tools:context="com.example.android.courtcounter.MainActivity">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="160dp"
-            android:src="@drawable/chewbacca" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textColor="@android:color/white"
-            android:onClick="displayForButtonThree"
-            android:text="+3 hits !" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/liverpool" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textColor="@android:color/white"
-            android:onClick="displayForButtonTwo"
-            android:text="+2 hits !" />
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="40sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textColor="@android:color/white"
-            android:onClick="displayForButtonOne"
-            android:text="+1 hits" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:src="@drawable/live" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="displayForButtonBSecond"
+                android:text="@string/gool"
+                android:textColor="@android:color/white" />
+<!--
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="displayForButtonBThree"
+                android:text="@string/card"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:onClick="displayForButtonBTwo"
+                android:text="@string/foul"
+                android:textColor="@android:color/white" />
+-->
+
+
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="0dp"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:paddingTop="10sp"
-        android:orientation="vertical"
-        tools:context="com.example.android.courtcounter.MainActivity">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:padding="4dp"
-            android:text="Vader" />
-
-        <TextView
-            android:id="@+id/team_b_score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:padding="4dp"
-            android:textColor="@android:color/black"
-            android:textSize="40sp"
-            android:text="100" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="160dp"
-            android:src="@drawable/vader" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textColor="@android:color/white"
-            android:onClick="displayForButtonBThree"
-            android:text="+3 hits !" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textColor="@android:color/white"
-            android:onClick="displayForButtonBTwo"
-            android:text="+2 hits !" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textColor="@android:color/white"
-            android:onClick="displayForButtonBOne"
-            android:text="+1 hits" />
-
-    </LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:onClick="resetScoreButton"
+        android:text="@string/play_off"
+        android:textColor="@android:color/white" />
 
 
-</LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:text="New Fight"
-            android:textColor="@android:color/white"
-            android:onClick="resetScoreButton"/>
-
-
-
-    </RelativeLayout>
+</RelativeLayout>
 
 
